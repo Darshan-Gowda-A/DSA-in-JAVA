@@ -4,7 +4,7 @@ public class reversearray {
          int[] arr = { 1, 3, 5, 3, 2, 6 };
          int i=0;
          int j=arr.length-1;
-         while (i<+j) {
+         while (i<=j) {
             int temp=arr[i];
             arr[i]=arr[j];
             arr[j]=temp;
