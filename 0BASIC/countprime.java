@@ -2,14 +2,18 @@ import java.util.Scanner;
 
 public class countprime {
   public static int isprime(int a){
-    for (int i = 2; i < a/2; i++) {
+    if(a<=1){
+      return 0;
+    }
+    else{
+    for (int i = 2; i <= Math.sqrt(a); i++) {
        if (a%i==0){
       return 0;
     }
   }
         return 1;
       
-      
+}
   }
   public static void main(String[] args) {
     Scanner sc = new Scanner(System.in);
